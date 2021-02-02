@@ -1,0 +1,120 @@
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .play {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .footer__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__copyright {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 590px) {
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 49px;
+        right: 35px;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border: none;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            margin-top: -7px;
+
+            transition: transform 0.15s;
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            margin-top: 7px;
+
+            transition: transform 0.15s;
+        }
+    }
+
+    .menu-btn-active {
+        height: 0px;
+
+        &::before {
+            transform: rotate(45deg);
+            margin-top: 0;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            margin-top: 0;
+        }
+    }
+    
+    .header {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: rgba(157, 41, 41, .75);
+        width: 250px;
+        padding-bottom: 40px;
+    }
+    .header-active {
+        display: flex;
+    }
+    .logo {
+        margin-bottom: 25px;
+    }
+    .menu-list {
+        margin: auto;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-list__link {
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+    .social__link:first-child {
+        margin-left: 0;
+    }
+    .social {
+        order: 1;
+        margin-bottom: 22px;
+    }
+
+    .main-content {
+        margin-top: 196px;
+    }
+
+    .main__title{
+        font-size: 56px;
+        line-height: 66px;
+    }
+
+    .episode-2 {
+        display: none;
+    }
+
+}

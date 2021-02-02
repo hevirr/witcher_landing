@@ -1,0 +1,22 @@
+.header {
+    padding-top: 60px;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-list {
+    margin-right: auto;
+    margin-left: 67px;
+}
+.menu-list__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 24px;
+}
+.social__link {
+    margin-left: 20px;
+    text-decoration: none;
+}

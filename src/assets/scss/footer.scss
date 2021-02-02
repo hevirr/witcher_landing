@@ -1,0 +1,18 @@
+.footer {
+    background-color: #141218;
+    padding: 20px 0px;
+    margin-top: auto;
+}
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__copyright {
+    color: $footer-text;
+}
+.footer__link {
+    margin-right: 25px;
+    text-decoration: none;
+    color: $footer-text;
+}
